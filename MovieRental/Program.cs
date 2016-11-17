@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieRental.Strategy_print_confirmation;
+using System;
 
 namespace MovieRental
 {
@@ -9,15 +10,15 @@ namespace MovieRental
             Customer c = new Customer("Kamil", "Kapka");
             MovieCategory mc = new MovieCategory("New");
             Movie m = new Movie("Iluzja 2", mc);
+
             MovieRental mr = new MovieRental(c, m, DateTime.Now, DateTime.Now.AddDays(7));
 
             LoyaltyPointsCountContext context = new LoyaltyPointsCountContext(new LoyaltyPointsCountA());
             context.executeStrategy(mr);
 
-            RentalPriceContext rcontext = new RentalPriceContext(new RentalPriceA());
-            Console.WriteLine("Total cost: "+rcontext.executeStrategy(mr)+" PLN ");
+            PrintConfirmationContext pcontext = new PrintConfirmationContext(new PrintConfirmationStandard());
+            pcontext.executeStrategy(mr);
 
-            Console.WriteLine("Total points: "+mr.Customer.LoyaltyPoints);
             Console.ReadLine();
         }
     }
