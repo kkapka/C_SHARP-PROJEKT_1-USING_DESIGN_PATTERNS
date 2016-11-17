@@ -14,7 +14,7 @@ namespace MovieRental
             {
                 points = (daysCount - 1) * 1 + 1 * 5;
 
-                if (categoryName == "Nowość")
+                if (categoryName == "New")
                 {
                     points *= 2;
                 }
