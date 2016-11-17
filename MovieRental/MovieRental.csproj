@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer.cs" />
+    <Compile Include="LoyaltyPointsCountA.cs" />
+    <Compile Include="LoyaltyPointsCountContext.cs" />
+    <Compile Include="LoyaltyPointsCountStrategy.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="MovieCategory.cs" />
     <Compile Include="MovieRental.cs" />
