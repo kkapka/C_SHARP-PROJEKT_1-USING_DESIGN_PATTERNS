@@ -19,6 +19,9 @@ namespace MovieRental
             PrintConfirmationContext pcontext = new PrintConfirmationContext(new PrintConfirmationStandard());
             pcontext.executeStrategy(mr);
 
+            PrintConfirmationContext pcontext2 = new PrintConfirmationContext(new PrintConfirmationHTML());
+            pcontext.executeStrategy(mr);
+
             Console.ReadLine();
         }
     }
