@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="basic_classes\Customer.cs" />
     <Compile Include="rental_management_system\RentalManagementSystem.cs" />
+    <Compile Include="rental_management_system\RentalManagementSystemGUI.cs" />
     <Compile Include="strategy_loyalty_points\LoyaltyPointsCountA.cs" />
     <Compile Include="strategy_loyalty_points\LoyaltyPointsCountContext.cs" />
     <Compile Include="strategy_loyalty_points\LoyaltyPointsCountStrategy.cs" />

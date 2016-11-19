@@ -1,4 +1,5 @@
 ﻿using MovieRental.Strategy_print_confirmation;
+using MovieRental.rental_management_system;
 using System;
 
 namespace MovieRental
@@ -7,6 +8,7 @@ namespace MovieRental
     {
         static void Main(string[] args)
         {
+            /*
             Customer c = new Customer("Kamil", "Kapka");
             MovieCategory mc = new MovieCategory("New");
             Movie m = new Movie("Iluzja 2", mc);
@@ -20,7 +22,11 @@ namespace MovieRental
             pcontext.executeStrategy(mr);
 
             PrintConfirmationContext pcontext2 = new PrintConfirmationContext(new PrintConfirmationHTML());
-            pcontext2.executeStrategy(mr);
+            pcontext2.executeStrategy(mr);*/
+
+            RentalManagementSystem rms = new RentalManagementSystem();
+            rms.init();
+            rms.start();
 
             Console.ReadLine();
         }

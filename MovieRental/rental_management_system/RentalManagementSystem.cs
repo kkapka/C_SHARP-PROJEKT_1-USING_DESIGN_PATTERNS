@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MovieRental.Rental_management_system
+namespace MovieRental.rental_management_system
 {
-    class RentalManagementSystem
+    partial class RentalManagementSystem
     {
         private List<MovieCategory> movieCategoryList;
         private List<Movie> movieList;
