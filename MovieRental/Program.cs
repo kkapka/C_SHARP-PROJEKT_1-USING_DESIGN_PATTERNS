@@ -20,7 +20,7 @@ namespace MovieRental
             pcontext.executeStrategy(mr);
 
             PrintConfirmationContext pcontext2 = new PrintConfirmationContext(new PrintConfirmationHTML());
-            pcontext.executeStrategy(mr);
+            pcontext2.executeStrategy(mr);
 
             Console.ReadLine();
         }
