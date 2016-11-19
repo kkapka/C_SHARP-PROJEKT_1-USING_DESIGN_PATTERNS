@@ -43,22 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Basic_classes\Customer.cs" />
-    <Compile Include="Strategy_loyalty_points\LoyaltyPointsCountA.cs" />
-    <Compile Include="Strategy_loyalty_points\LoyaltyPointsCountContext.cs" />
-    <Compile Include="Strategy_loyalty_points\LoyaltyPointsCountStrategy.cs" />
-    <Compile Include="Basic_classes\Movie.cs" />
-    <Compile Include="Basic_classes\MovieCategory.cs" />
-    <Compile Include="Basic_classes\MovieRental.cs" />
+    <Compile Include="basic_classes\Customer.cs" />
+    <Compile Include="rental_management_system\RentalManagementSystem.cs" />
+    <Compile Include="strategy_loyalty_points\LoyaltyPointsCountA.cs" />
+    <Compile Include="strategy_loyalty_points\LoyaltyPointsCountContext.cs" />
+    <Compile Include="strategy_loyalty_points\LoyaltyPointsCountStrategy.cs" />
+    <Compile Include="basic_classes\Movie.cs" />
+    <Compile Include="basic_classes\MovieCategory.cs" />
+    <Compile Include="basic_classes\MovieRental.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strategy_print_confirmation\PrintConfirmationHTML.cs" />
-    <Compile Include="Strategy_print_confirmation\PrintConfirmationStandard.cs" />
-    <Compile Include="Strategy_print_confirmation\PrintConfirmationContext.cs" />
-    <Compile Include="Strategy_print_confirmation\PrintConfirmationStrategy.cs" />
-    <Compile Include="Strategy_rental_price\RentalPriceA.cs" />
-    <Compile Include="Strategy_rental_price\RentalPriceContext.cs" />
-    <Compile Include="Strategy_rental_price\RentalPriceStrategy.cs" />
+    <Compile Include="strategy_print_confirmation\PrintConfirmationHTML.cs" />
+    <Compile Include="strategy_print_confirmation\PrintConfirmationStandard.cs" />
+    <Compile Include="strategy_print_confirmation\PrintConfirmationContext.cs" />
+    <Compile Include="strategy_print_confirmation\PrintConfirmationStrategy.cs" />
+    <Compile Include="strategy_rental_price\RentalPriceA.cs" />
+    <Compile Include="strategy_rental_price\RentalPriceContext.cs" />
+    <Compile Include="strategy_rental_price\RentalPriceStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
