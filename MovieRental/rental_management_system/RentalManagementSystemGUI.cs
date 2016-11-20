@@ -14,6 +14,7 @@ namespace MovieRental.rental_management_system
         {
             return Console.ReadLine();
         }
+
         private void printMenu()
         {
             string optionsList = 

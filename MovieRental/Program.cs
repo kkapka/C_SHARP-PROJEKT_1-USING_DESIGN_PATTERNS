@@ -8,7 +8,6 @@ namespace MovieRental
     {
         static void Main(string[] args)
         {
-
             RentalManagementSystem rms = new RentalManagementSystem();
             rms.init();
             rms.start();
