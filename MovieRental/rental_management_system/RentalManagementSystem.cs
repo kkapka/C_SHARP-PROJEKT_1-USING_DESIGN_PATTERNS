@@ -75,7 +75,7 @@ namespace MovieRental.rental_management_system
 
             addCustomer("Kamil","Kapka");
 
-            addMovieRental(0, 0, 7);
+            addMovieRental(0, 2, 7);
 
         }
     }

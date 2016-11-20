@@ -93,6 +93,7 @@ namespace MovieRental.rental_management_system
         {
             printTextOnConsole("Choose rent: ");
             int rentId = int.Parse(getTextFromConsole());
+
             printTextOnConsole(
                 @"Choose confirmation print format:
                 1. Standard

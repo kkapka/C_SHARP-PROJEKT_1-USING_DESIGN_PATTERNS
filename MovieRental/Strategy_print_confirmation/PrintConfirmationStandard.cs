@@ -11,6 +11,8 @@ namespace MovieRental.Strategy_print_confirmation
         public void print(MovieRental rental)
         {
             RentalPriceContext rcontext = new RentalPriceContext(new RentalPriceA());
+            LoyaltyPointsCountContext lcontext = new LoyaltyPointsCountContext(new LoyaltyPointsCountA());
+            lcontext.executeStrategy(rental);
 
             println("Name: "+ rental.Customer.Name + " Surname: " + rental.Customer.Surname);
             println("Amount of rent days: " + (int)(rental.ReturnDate-rental.RentDate).TotalDays);

@@ -7,6 +7,9 @@ namespace MovieRental.Strategy_print_confirmation
         public void print(MovieRental rental)
         {
             RentalPriceContext rcontext = new RentalPriceContext(new RentalPriceA());
+            LoyaltyPointsCountContext lcontext = new LoyaltyPointsCountContext(new LoyaltyPointsCountA());
+            lcontext.executeStrategy(rental);
+
             string filePath = "rental_confirmation.html";
 
             using (StreamWriter file=new StreamWriter(filePath))
