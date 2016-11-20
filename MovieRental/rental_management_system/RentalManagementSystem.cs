@@ -18,9 +18,9 @@ namespace MovieRental.rental_management_system
             movieRentalList = new List<MovieRental>();
         }
         
-        private void addMovieCategory(string name)
+        private void addMovieCategory(string name,int price)
         {
-            MovieCategory movieCategory = new MovieCategory(name);
+            MovieCategory movieCategory = new MovieCategory(name,price);
             movieCategoryList.Add(movieCategory);
         }
 
@@ -63,10 +63,10 @@ namespace MovieRental.rental_management_system
 
         public void init()
         {
-            addMovieCategory("Normal");
-            addMovieCategory("Kids");
-            addMovieCategory("New");
-            addMovieCategory("Western");
+            addMovieCategory("Normal",1);
+            addMovieCategory("Kids",2);
+            addMovieCategory("New",3);
+            addMovieCategory("Western",4);
 
             addMovie("Animals", 0);
             addMovie("Shrek 3", 1);
