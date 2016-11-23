@@ -92,8 +92,8 @@ namespace MovieRental.rental_management_system
 
         private void doCase4()
         {
-            printTextOnConsole("Choose rent: ");
-            int rentId = int.Parse(getTextFromConsole());
+            printTextOnConsole("Choose customer: ");
+            int customerId = int.Parse(getTextFromConsole());
 
             printTextOnConsole(
                 @"Choose confirmation print format:
@@ -116,7 +116,7 @@ namespace MovieRental.rental_management_system
 
             }
 
-            context.executeStrategy(movieRentalList[rentId]);
+            context.executeStrategy(this, customerId);
 
         }
     }

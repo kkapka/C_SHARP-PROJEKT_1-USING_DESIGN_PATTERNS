@@ -46,9 +46,14 @@ namespace MovieRental.rental_management_system
             return movieList[id];
         }
 
-        private Customer getCustomer(int id)
+        public Customer getCustomer(int id)
         {
             return customerList[id];
+        }
+
+        public List<MovieRental> getMovieRentalList()
+        {
+            return movieRentalList;
         }
 
         private void addMovieRental(int customerId,int movieId,int rentLength)
@@ -58,6 +63,11 @@ namespace MovieRental.rental_management_system
             DateTime rentDate = DateTime.Now;
             DateTime returnDate = DateTime.Now.AddDays(rentLength);
             MovieRental movieRental = new MovieRental(customer,movie,rentDate,returnDate);
+
+            // counting loyalty points strategy
+            LoyaltyPointsCountContext lcontext = new LoyaltyPointsCountContext(new LoyaltyPointsCountA());
+            lcontext.executeStrategy(movieRental);
+
             movieRentalList.Add(movieRental);
         }
 

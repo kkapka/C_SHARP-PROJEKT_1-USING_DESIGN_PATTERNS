@@ -1,6 +1,4 @@
-﻿using MovieRental.Strategy_print_confirmation;
-using MovieRental.rental_management_system;
-using System;
+﻿using MovieRental.rental_management_system;
 
 namespace MovieRental
 {

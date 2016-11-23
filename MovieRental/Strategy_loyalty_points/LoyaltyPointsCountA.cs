@@ -19,7 +19,7 @@ namespace MovieRental
                     points *= 2;
                 }
 
-                rental.Customer.LoyaltyPoints = points;
+                rental.Customer.LoyaltyPoints += points;
             }
             else
             {

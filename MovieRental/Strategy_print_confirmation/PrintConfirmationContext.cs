@@ -1,4 +1,6 @@
-﻿namespace MovieRental.Strategy_print_confirmation
+﻿using MovieRental.rental_management_system;
+
+namespace MovieRental.Strategy_print_confirmation
 {
     class PrintConfirmationContext
     {
@@ -9,9 +11,9 @@
             this.strategy = strategy;
         }
 
-        public void executeStrategy(MovieRental rental)
+        public void executeStrategy(RentalManagementSystem rentalManagementSystem,int customerId)
         {
-            strategy.print(rental);
+            strategy.print(rentalManagementSystem,customerId);
         }
     }
 }
