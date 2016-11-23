@@ -84,6 +84,7 @@ namespace MovieRental.rental_management_system
             addMovie("Cheyenne", 3);
 
             addCustomer("Kamil","Kapka");
+            addCustomer("Joanna", "Tokarska");
 
             addMovieRental(0, 2, 7);
 
